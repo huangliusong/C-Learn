@@ -10,10 +10,13 @@
 #include "strp.h"
 #include "str_arr_p.h"
 #include "point_arr.h"
+#include "struct_valiable.h"
+
 
 int main(int argc, const char * argv[]) {
     //T1();
     //T2();
-    T3();
+    //T3();
+    struct_test1();
     return 0;
 }
