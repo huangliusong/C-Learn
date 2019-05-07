@@ -9,9 +9,11 @@
 #include <stdio.h>
 #include "strp.h"
 #include "str_arr_p.h"
+#include "point_arr.h"
 
 int main(int argc, const char * argv[]) {
     //T1();
-    T2();
+    //T2();
+    T3();
     return 0;
 }
