@@ -192,7 +192,7 @@ void copy_string1(char from[],char to[]){
 }
 
 
-//用字符型指针变量作为实参
+//用字符型指针变量作为实参 
 void test9(){
     void copy_string2(char from[],char to[]);
     char a[]="I am a teacher.";
