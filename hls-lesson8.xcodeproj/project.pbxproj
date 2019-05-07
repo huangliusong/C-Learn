@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333CBD0F228127D500B1930D /* strp.c in Sources */ = {isa = PBXBuildFile; fileRef = 333CBD0E228127D500B1930D /* strp.c */; };
+		333CBD12228128D900B1930D /* str_arr_p.c in Sources */ = {isa = PBXBuildFile; fileRef = 333CBD11228128D900B1930D /* str_arr_p.c */; };
 		33E8AC4E227E66B8007B2CBB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 33E8AC4D227E66B8007B2CBB /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		333CBD0D228127D500B1930D /* strp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strp.h; sourceTree = "<group>"; };
+		333CBD0E228127D500B1930D /* strp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strp.c; sourceTree = "<group>"; };
+		333CBD10228128D900B1930D /* str_arr_p.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = str_arr_p.h; sourceTree = "<group>"; };
+		333CBD11228128D900B1930D /* str_arr_p.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = str_arr_p.c; sourceTree = "<group>"; };
 		33E8AC4A227E66B8007B2CBB /* hls-lesson8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hls-lesson8"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E8AC4D227E66B8007B2CBB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				33E8AC4D227E66B8007B2CBB /* main.c */,
+				333CBD0D228127D500B1930D /* strp.h */,
+				333CBD0E228127D500B1930D /* strp.c */,
+				333CBD10228128D900B1930D /* str_arr_p.h */,
+				333CBD11228128D900B1930D /* str_arr_p.c */,
 			);
 			path = "hls-lesson8";
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333CBD0F228127D500B1930D /* strp.c in Sources */,
+				333CBD12228128D900B1930D /* str_arr_p.c in Sources */,
 				33E8AC4E227E66B8007B2CBB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
