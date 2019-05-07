@@ -11,12 +11,13 @@
 
 void T2(){
     printf("\nT2\n");
-
-    void test1();
-    test1();
-    
+    void test11();
+    test11();
 }
 
-void test1(){
-    
+void test11(){
+    //改变指针变量的值
+    char *a="I love China!";
+    a=a+7;
+    printf("%s\n",a);
 }
