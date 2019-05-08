@@ -80,6 +80,42 @@ void s_testt2(){
     
 }
 
+
+
 void s_testt3(){
-    //
+    //结构体数组的应用举例
+    struct Student {
+        int num;
+        char name[20];
+        float score;
+    };
+    
+    struct Student stu[5]={
+        {10101,"zhang1",78},
+        {10102,"zhang2",98.5},
+        {10103,"zhang3",86},
+        {10104,"zhang4",73.5},
+        {10105,"zhang5",100}
+    };//定义结构体数组并且进行s初始化
+    struct Student temp;//用作交换时的临时变量
+    const int n=5;
+    int i,j,k;
+    printf("The order is:\n");
+    for (i=0; i<n-1; i++) {
+        k=i;
+        for (j=i+1; j<n; j++) {
+            if (stu[j].score>stu[k].score) {
+                //k=j;
+                temp=stu[k];
+                stu[k]=stu[i];
+                stu[i]=temp;
+            }
+        }
+        for (i=0; i<n; i++) {
+            printf("%6d %8s %6.2f \n",stu[i].num,stu[i].name,stu[i].score);
+        }
+    }
+    
+    
+    
 }
