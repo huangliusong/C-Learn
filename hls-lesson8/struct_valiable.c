@@ -22,8 +22,11 @@ void struct_test1(){
     //s_testt2();
     
     //结构体数组的应用举例
-    void s_testt3();
-    s_testt3();
+    //void s_testt3();
+   // s_testt3();
+    
+    void s_testt4();
+    s_testt4();
 }
 
 
@@ -116,6 +119,28 @@ void s_testt3(){
         }
     }
     
+}
+
+
+void s_testt4(){
+    //结构体指针
+    struct Student {
+        long num;
+        char name[20];
+        char sex;
+        float score;
+    };
     
+    struct Student stu_1;
+    struct Student *p;
+    p=&stu_1;
+    stu_1.num=10001;
+    strcpy(stu_1.name, "Li Lin");
+    stu_1.score='M';
+    stu_1.score=89.5;
+    printf(" No.:%d\n name:%s\n sex:%s\n score:%5.1f\n",
+           stu_1.num,stu_1.name,stu_1.sex,stu_1.score);
     
+    printf(" No.:%d\n name:%s\n sex:%s\n score:%5.1f\n",
+           (*p).num,(*p).name,(*p).sex,(*p).score);
 }
