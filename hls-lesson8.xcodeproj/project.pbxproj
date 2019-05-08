@@ -12,6 +12,7 @@
 		333CBD1522816B8800B1930D /* point_arr.c in Sources */ = {isa = PBXBuildFile; fileRef = 333CBD1422816B8800B1930D /* point_arr.c */; };
 		333CBD18228174EF00B1930D /* struct_valiable.c in Sources */ = {isa = PBXBuildFile; fileRef = 333CBD17228174EF00B1930D /* struct_valiable.c */; };
 		33E8AC4E227E66B8007B2CBB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 33E8AC4D227E66B8007B2CBB /* main.c */; };
+		33EC34F02282BB5D00302C5A /* struct_point.c in Sources */ = {isa = PBXBuildFile; fileRef = 33EC34EF2282BB5D00302C5A /* struct_point.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		333CBD17228174EF00B1930D /* struct_valiable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = struct_valiable.c; sourceTree = "<group>"; };
 		33E8AC4A227E66B8007B2CBB /* hls-lesson8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hls-lesson8"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E8AC4D227E66B8007B2CBB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		33EC34EE2282BB5D00302C5A /* struct_point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = struct_point.h; sourceTree = "<group>"; };
+		33EC34EF2282BB5D00302C5A /* struct_point.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = struct_point.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				333CBD1322816B8800B1930D /* point_arr.h */,
 				333CBD16228174EF00B1930D /* struct_valiable.h */,
 				333CBD17228174EF00B1930D /* struct_valiable.c */,
+				33EC34EE2282BB5D00302C5A /* struct_point.h */,
+				33EC34EF2282BB5D00302C5A /* struct_point.c */,
 				333CBD1422816B8800B1930D /* point_arr.c */,
 				333CBD0D228127D500B1930D /* strp.h */,
 				333CBD0E228127D500B1930D /* strp.c */,
@@ -141,6 +146,7 @@
 				333CBD18228174EF00B1930D /* struct_valiable.c in Sources */,
 				333CBD0F228127D500B1930D /* strp.c in Sources */,
 				333CBD12228128D900B1930D /* str_arr_p.c in Sources */,
+				33EC34F02282BB5D00302C5A /* struct_point.c in Sources */,
 				333CBD1522816B8800B1930D /* point_arr.c in Sources */,
 				33E8AC4E227E66B8007B2CBB /* main.c in Sources */,
 			);

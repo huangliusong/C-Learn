@@ -8,7 +8,7 @@
 
 #include "struct_valiable.h"
 #include <string.h>
-
+#define N 3
 void struct_test1(){
     //printf("\nstruct_test1\n");
     //void s_testt(void);
@@ -28,8 +28,11 @@ void struct_test1(){
 //    void s_testt4();
 //    s_testt4();
     
-    void s_testt5();
-    s_testt5();
+//    void s_testt5();
+//    s_testt5();
+    
+   // void s_testt6();
+   // s_testt6();
 }
 
 
@@ -141,7 +144,7 @@ void s_testt4(){
     strcpy(stu_1.name, "Li Lin");
     stu_1.score='M';
     stu_1.score=89.5;
-    printf("No.:%d\nname:%s\nsex:%c\nscore:%5.1f\n",
+    printf("No.:%ld\nname:%s\nsex:%c\nscore:%5.1f\n",
            stu_1.num,stu_1.name,stu_1.sex,stu_1.score);
     
     printf("No.:%d\nname:%s\nsex:%c\nscore:%5.1f\n",
@@ -184,3 +187,5 @@ void s_testt5(){
         printf("\n");
     }
 }
+
+
