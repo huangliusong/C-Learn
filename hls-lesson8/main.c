@@ -20,6 +20,6 @@ int main(int argc, const char * argv[]) {
     //T2();
     //T3();
     //s_testt6();
-    test();
+    testp();
     return 0;
 }
