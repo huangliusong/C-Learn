@@ -7,16 +7,19 @@
 //
 
 #include <stdio.h>
-#include "strp.h"
-#include "str_arr_p.h"
-#include "point_arr.h"
-#include "struct_valiable.h"
-#include "struct_point.h"
+//#include "strp.h"
+//#include "str_arr_p.h"
+//#include "point_arr.h"
+//#include "struct_valiable.h"
+//#include "struct_point.h"
+
+#include "chain_table.h"
 
 int main(int argc, const char * argv[]) {
     //T1();
     //T2();
     //T3();
-    s_testt6();
+    //s_testt6();
+    test();
     return 0;
 }
