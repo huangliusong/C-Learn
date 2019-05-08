@@ -25,8 +25,11 @@ void struct_test1(){
     //void s_testt3();
    // s_testt3();
     
-    void s_testt4();
-    s_testt4();
+//    void s_testt4();
+//    s_testt4();
+    
+    void s_testt5();
+    s_testt5();
 }
 
 
@@ -138,9 +141,46 @@ void s_testt4(){
     strcpy(stu_1.name, "Li Lin");
     stu_1.score='M';
     stu_1.score=89.5;
-    printf(" No.:%d\n name:%s\n sex:%s\n score:%5.1f\n",
+    printf("No.:%d\nname:%s\nsex:%c\nscore:%5.1f\n",
            stu_1.num,stu_1.name,stu_1.sex,stu_1.score);
     
-    printf(" No.:%d\n name:%s\n sex:%s\n score:%5.1f\n",
+    printf("No.:%d\nname:%s\nsex:%c\nscore:%5.1f\n",
            (*p).num,(*p).name,(*p).sex,(*p).score);
+    
+    printf("No.:%d\nname:%s\nsex:%c\nscore:%5.1f\n",
+           p->num,p->name,p->sex,p->score);
+}
+
+
+void s_testt5(){
+    struct Student {
+        int num;
+        char name[20];
+        char sex;
+        int age;
+    };
+    
+    struct Student stu[3]={
+        {1001,"Li Lin",'M',18},
+        {1002,"Zhang Fang",'M',19},
+        {1003,"Wang Min",'F',20}
+    };
+    printf("\n==========================================\n");
+    struct Student *p;
+    for (p=stu; p<stu+3; p++) {
+        printf("No.:%d  name:%s  sex:%c  age:%d\n",
+               p->num,p->name,p->sex,p->age);
+    }
+    printf("\n==========================================\n");
+    for (p=stu; p<stu+3;) {
+        printf("No.:%d  name:%s  sex:%c  age:%d",
+               (p++)->num,( p++)->name,( p++)->sex,( p++)->age);
+        printf("\n");
+    }
+    printf("\n==========================================\n");
+    for (p=stu; p<stu+3;) {
+        printf("No.:%d  name:%s  sex:%c  age:%d",
+               (++p)->num,( ++p)->name,( ++p)->sex,( ++p)->age);
+        printf("\n");
+    }
 }
