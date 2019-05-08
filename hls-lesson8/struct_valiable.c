@@ -7,6 +7,7 @@
 //
 
 #include "struct_valiable.h"
+#include <string.h>
 
 void struct_test1(){
     //printf("\nstruct_test1\n");
@@ -17,8 +18,12 @@ void struct_test1(){
     //s_testt1();
     
     //结构体数组
-    void s_testt2();
-    s_testt2();
+    //void s_testt2();
+    //s_testt2();
+    
+    //结构体数组的应用举例
+    void s_testt3();
+    s_testt3();
 }
 
 
@@ -51,6 +56,30 @@ void s_testt1(){
     }
 }
 
+//
+struct Person {
+    char name[20];//候选人的姓名
+    int count;//候选人所得的票数
+}leader[3]={"h",0,"l",0,"s",0};//定义结构体并且初始化
+
 void s_testt2(){
+    int i,j;
+    char leader_name[20];//定义字符数组
+    for (i=1; i<=10; i++) {
+        scanf("%s",leader_name);
+        for (j=0; j<3; j++) {
+            if (strcmp(leader_name,leader[j].name)==0) {
+                leader[j].count++;
+            }
+        }
+    }
+    printf("\nResult:\n");
+    for (i=0; i<3; i++) {
+        printf("%5s:%d\n",leader[i].name,leader[i].count);
+    }
+    
+}
+
+void s_testt3(){
     //
 }
